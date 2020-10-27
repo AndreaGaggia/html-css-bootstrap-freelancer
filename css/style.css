@@ -47,10 +47,11 @@ nav .right_menu {
     font-family: "Font Awesome 5 Free";
      content: "\f0c9";
      display: inline-block;
-     padding: 0 3px;
+     padding: 0 8px;
      vertical-align: middle;
      font-weight: 900;
      color: grey;
      border: 1px solid grey;
+     border-radius: 3px;
   }
 }
