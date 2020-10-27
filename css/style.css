@@ -21,6 +21,9 @@ nav, .top_footer, .bottom_footer {
   color: #fff;
   padding: 2% 0;
 }
+nav .right_menu {
+  /* qui bisogna far apparire l'icona bars in modalità phone */
+}
 
 /* banner */
 .banner, #about {
@@ -34,4 +37,20 @@ nav, .top_footer, .bottom_footer {
   background-color: #fafafa;
   border: 1px solid red;
   padding: 2%;
+}
+
+@media screen and (max-width: 767px) {
+  nav .right_menu a {
+    display: none;
+  }
+  nav .right_menu::after {
+    font-family: "Font Awesome 5 Free";
+     content: "\f0c9";
+     display: inline-block;
+     padding: 0 3px;
+     vertical-align: middle;
+     font-weight: 900;
+     color: grey;
+     border: 1px solid grey;
+  }
 }
