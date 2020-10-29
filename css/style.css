@@ -1,7 +1,7 @@
 body {
-  padding-top: 70px;
+  padding-top: 80px;
 }
-
+ /* decorative element */
 .decor {
   margin: 15px 0;
 }
@@ -45,8 +45,8 @@ body {
   margin-bottom: 20px;
 }
 
-/* header */
 
+/* HEADER */
 /* nav */
 nav {
   background-color: #2B3E50;
@@ -74,39 +74,32 @@ nav .left_item, nav .right_menu {
 nav .right_menu > span.ham {
   display: none;
 }
+
 /* banner */
-#site_header > .banner > .container {
-  padding-right: 0;
-  /* So che non si fa!
-  è in relazione al fatto che il contenuto del banner non fosse perfettamente centrato.
-  Ho chiesto a Fabiola. Non si è capito bene il motivo.
-  C'è questo surplus di 15px a dx. si vede bene con pesticide
-  */
-}
 .banner, #about {
   background-color: #18BC9B;
   color: #fff;
 }
-
+.banner {
+  width: 100%;
+}
 .banner_content > img {
   width: 250px;
 }
-
 .banner_content > h1 {
   font-size: 64px;
   font-weight: bold;
 }
-
 .banner_content > h3 {
   font-weight: 400;
 }
 
+/* MAIN */
 /* portfolio */
 #portfolio .pf_item {
   height: 280px;
   position: relative;
 }
-
 #portfolio div.layover {
   width: 350px;
   height: 252px;
@@ -116,9 +109,8 @@ nav .right_menu > span.ham {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 0;
 }
-
 #portfolio div.layover > span {
   color: #fff;
   font-size: 6rem;
@@ -126,9 +118,7 @@ nav .right_menu > span.ham {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
 }
-
 #portfolio img {
   width: 350px;
   height: 252px;
@@ -136,18 +126,17 @@ nav .right_menu > span.ham {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
+  /* z-index: 1; */
 }
-
-#portfolio img:hover #portfolio div.layover > span {
-  z-index: 3;
-}
-#portfolio img:hover #portfolio div.layover {
+/* #portfolio img:hover #portfolio div.layover > span {
   z-index: 2;
-}
-#portfolio img:hover {
+} */
+/* #portfolio img:hover #portfolio div.layover {
   z-index: 1;
-}
+} */
+/* #portfolio img:hover {
+  z-index: -1;
+} */
 
 /* about */
 .btn_dlf {
@@ -185,7 +174,7 @@ form .form-group > input, form .form-group > textarea {
   box-shadow: none;
 }
 
-/* footer */
+/* FOOTER */
 .top_footer, .bottom_footer {
   background-color: #2B3E50;
   color: #fff;
@@ -225,6 +214,7 @@ form .form-group > input, form .form-group > textarea {
 }
 
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 767px) {
   nav .right_menu a {
     display: none;
@@ -235,6 +225,7 @@ form .form-group > input, form .form-group > textarea {
     vertical-align: middle;
   }
 }
+
 @media all and (max-width: 991px) {
   nav .left_item > a {
     font-size: 2rem;
